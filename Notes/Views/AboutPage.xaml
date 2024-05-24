@@ -8,10 +8,13 @@
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
         <HorizontalStackLayout Spacing="10">
-            <Image Source="dotnet_bot.png"
+            <Image Source="spiderweb.png"
                    SemanticProperties.Description="The dot net bot waving hello!"
                    HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
+            <VerticalStackLayout>
+                <Label FontSize="22" FontAttributes="Bold" Text="Matías Robayo" VerticalOptions="End" />
+                <Label FontSize="18" Text="Tengo 20 años y estoy en 5to semestre de la carrera de ingeniería de software en la Universidad de las Américas" VerticalOptions="Start" />
+            </VerticalStackLayout>
             <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
         </HorizontalStackLayout>
 
